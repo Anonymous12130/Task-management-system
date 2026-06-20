@@ -1,0 +1,312 @@
+body {
+  background: #f4f7fc;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+}
+
+/* Layout */
+
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background: #f8fafc;
+}
+
+/* Sidebar */
+
+.sidebar {
+  width: 280px;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #312e81,
+    #4f46e5,
+    #7c3aed
+  );
+  color: white;
+  padding: 30px;
+  box-shadow: 5px 0 20px rgba(0,0,0,.15);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 15px 18px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.sidebar li:hover {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.15
+  );
+  transform: translateX(5px);
+}
+
+.sidebar svg {
+  margin-right: 10px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logout-btn {
+  margin-top: 50px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  );
+}
+
+/* Navbar */
+
+.navbar-custom {
+  background: white;
+  border-radius: 20px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-custom .btn {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.navbar-custom strong {
+  font-size: 14px;
+}
+
+.navbar-custom small {
+  font-size: 12px;
+}
+
+/* Cards */
+
+.card {
+  border: none;
+  border-radius: 24px;
+  transition: all .3s ease;
+  overflow: hidden;
+  background: white;
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+/* Statistic Cards */
+
+.bg-primary {
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #8b5cf6
+  ) !important;
+}
+
+.bg-success {
+  background: linear-gradient(
+    135deg,
+    #22c55e,
+    #16a34a
+  ) !important;
+}
+
+.bg-warning {
+  background: linear-gradient(
+    135deg,
+    #f59e0b,
+    #f97316
+  ) !important;
+}
+
+.bg-danger {
+  background: linear-gradient(
+    135deg,
+    #ef4444,
+    #dc2626
+  ) !important;
+}
+
+/* Buttons */
+
+.btn {
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all .3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+/* Forms */
+
+.form-control,
+.form-select {
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 8px rgba(99,102,241,.3);
+  border-color: #6366f1;
+}
+
+/* Badges */
+
+.badge {
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Progress */
+
+.progress {
+  height: 28px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  font-weight: bold;
+  transition: width .5s ease;
+}
+
+/* Task Cards */
+
+.task-card {
+  border-radius: 20px;
+  transition: all .3s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-5px);
+}
+
+.task-card .btn {
+  min-width: 130px;
+}
+
+/* Headings */
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+  .app-layout{
+    flex-direction:column;
+  }
+
+  .sidebar{
+    width:100%;
+    min-height:auto;
+  }
+
+  .navbar-custom{
+    flex-direction:column;
+    gap:15px;
+  }
+
+}
+.input-group-text {
+  background: #6366f1;
+  color: white;
+  border: none;
+}
+
+.form-label {
+  font-size: 14px;
+}
+
+.card .badge {
+  font-size: 12px;
+}
+.stats-card {
+  text-align: center;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.stats-card h2 {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.stats-card h5 {
+  font-size: 15px;
+}
+
+.table {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.table thead {
+  background: #6366f1;
+  color: white;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.sidebar li {
+  font-size: 15px;
+}
+
+.sidebar li:hover {
+  background: rgba(
+    255,
+    255,
+    255,
+    .15
+  );
+}
+
+body {
+  background: #eef2ff;
+}
