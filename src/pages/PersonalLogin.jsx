@@ -6,22 +6,23 @@ function PersonalLogin() {
   const [password, setPassword] = useState("");
 
   const login = async () => {
-    const { data } = await supabase
-      .from("personal_users")
-      .select("*")
-      .eq("email", email)
-      .eq("password", password);
-
-    if (data.length > 0) {
-      localStorage.setItem(
-        "personalUser",
-        email
-      );
-
-      window.location.href = "/personal-dashboard";
-    } else {
-      alert("Invalid Credentials");
+    if (!email || !password) {
+      alert("Please fill all fields");
+      return;
     }
+
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+
+    if (error) {
+      alert(error.message);
+      return;
+    }
+
+    localStorage.setItem("personalUser", email);
+    window.location.href = "/personal-dashboard";
   };
 
   return (
@@ -31,6 +32,7 @@ function PersonalLogin() {
       <input
         className="form-control mb-3"
         placeholder="Email"
+        value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
 
@@ -38,6 +40,7 @@ function PersonalLogin() {
         type="password"
         className="form-control mb-3"
         placeholder="Password"
+        value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
 

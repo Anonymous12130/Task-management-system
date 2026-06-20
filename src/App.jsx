@@ -99,7 +99,7 @@ function App() {
 
         <Route
           path="/calendar"
-          element={<CalendarView />}
+          element={<CalenderView />}
         />
 
       </Routes>

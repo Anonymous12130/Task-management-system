@@ -58,6 +58,7 @@ function Login() {
     else if (
       profile.role === "personal"
     ) {
+      localStorage.setItem("personalUser", email);
       window.location.href =
         "/personal-dashboard";
     }
