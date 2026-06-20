@@ -4,24 +4,21 @@ import {
   Route,
 } from "react-router-dom";
 
-import Login from "./pages/Login";
-import Register from "./pages/Register";
+import Login from "./pages/Login.jsx";
+import Register from "./pages/Register.jsx";
+import AdminDashboard from "./pages/AdminDashboard.jsx";
+import EmployeeDashboard from "./pages/EmployeeDashboard.jsx";
 
-import AdminDashboard from "./pages/AdminDashboard";
-import EmployeeDashboard from "./pages/EmployeeDashboard";
-
-import PersonalDashboard from "./pages/PersonalDashboard";
-import PersonalLogin from "./pages/PersonalLogin";
-import PersonalRegister from "./pages/PersonalRegister";
-
-import PersonalProgress from "./pages/PersonalProgress";
-import StudyTracker from "./pages/StudyTracker";
-import Goals from "./pages/Goals";
-import HabitTracker from "./pages/HabitTracker";
-import Notes from "./pages/Notes";
-import PersonalAnalytics from "./pages/PersonalAnalytics";
-import CalendarView from "./pages/CalenderView";
-
+import PersonalDashboard from "./pages/PersonalDashboard.jsx";
+import PersonalLogin from "./pages/PersonalLogin.jsx";
+import PersonalRegister from "./pages/PersonalRegister.jsx";
+import PersonalProgress from "./pages/PersonalProgress.jsx";
+import StudyTracker from "./pages/StudyTracker.jsx";
+import Goals from "./pages/Goals.jsx";
+import HabitTracker from "./pages/HabitTracker.jsx";
+import Notes from "./pages/Notes.jsx";
+import PersonalAnalytics from "./pages/PersonalAnalytics.jsx";
+import CalenderView from "./pages/CalenderView.jsx";
 function App() {
   return (
     <BrowserRouter>
